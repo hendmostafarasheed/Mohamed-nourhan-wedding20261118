@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6f1730">
+  <meta name="description" content="Wedding invitation of Muhammed Ahmed Habash & Nourhan Mostafa Rasheed">
+  <title>Muhammed & Nourhan — Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="petal petal-1">✦</div>
+  <div class="petal petal-2">✦</div>
+
+  <section class="cover" id="cover">
+    <div class="cover-inner">
+      <div class="small-caps">YOU ARE CORDIALLY INVITED</div>
+      <div class="ornament">♥</div>
+      <h1>Muhammed <span>&amp;</span> Nourhan</h1>
+      <p class="date">18 · 11 · 2026</p>
+      <button class="open-btn" id="openBtn">Open Invitation</button>
+      <p class="music-note">♪ Music will start when you open the invitation</p>
+      <p class="hint">Tap to enter</p>
+    </div>
+  </section>
+
+  <audio id="bgMusic" loop preload="auto">
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+  <button class="music-toggle" id="musicToggle" aria-label="Pause music" title="Pause music">♫</button>
+
+  <main id="invitation" class="hidden">
+    <section class="hero">
+      <p class="small-caps">TO THE WEDDING OF</p>
+      <h2>Muhammed Ahmed Habash</h2>
+      <div class="and">♥</div>
+      <h2>Nourhan Mostafa Rasheed</h2>
+      <p class="intro">We would be honored to celebrate this special day with you.</p>
+    </section>
+
+    <section class="portrait-card">
+      <img src="invitation.jpg" alt="Muhammed and Nourhan wedding invitation illustration">
+    </section>
+
+    <section class="details">
+      <div class="detail">
+        <div class="icon">◷</div>
+        <h3>TIME</h3>
+        <p>7 PM - 12 AM</p>
+        <small>EVENING</small>
+      </div>
+      <div class="detail">
+        <div class="icon">⌖</div>
+        <h3>VENUE</h3>
+        <p>White Plaza</p>
+        <small>Askar Group</small>
+        <a class="location-btn" href="https://maps.app.goo.gl/ECdcUDue4T5sUAsY6?g_st=aw" target="_blank" rel="noopener">📍 View Location</a>
+      </div>
+      <div class="detail">
+        <div class="icon">▦</div>
+        <h3>DATE</h3>
+        <p>18 / 11 / 2026</p>
+        <small>WEDNESDAY</small>
+      </div>
+    </section>
+
+    <section class="countdown">
+      <p class="small-caps">COUNTING DOWN TO OUR DAY</p>
+      <div class="timer">
+        <div><strong id="days">--</strong><span>Days</span></div>
+        <div><strong id="hours">--</strong><span>Hours</span></div>
+        <div><strong id="minutes">--</strong><span>Minutes</span></div>
+        <div><strong id="seconds">--</strong><span>Seconds</span></div>
+      </div>
+    </section>
+
+
+    <section class="rsvp" id="rsvp">
+      <div class="ornament">♥</div>
+      <p class="small-caps">PLEASE LET US KNOW</p>
+      <h2>CONFIRM ATTENDANCE</h2>
+      <p class="rsvp-intro">Tap the button below to let us know you are coming.</p>
+
+      <button type="button" class="rsvp-btn" id="confirmAttendanceBtn">♥ Confirm Attendance</button>
+
+      <div class="attendance-count" aria-live="polite">
+        <span class="attendance-number" id="attendanceCount">—</span>
+        <span class="attendance-label">Guests Confirmed</span>
+      </div>
+
+      <p class="rsvp-note" id="rsvpNote">Only the total number of confirmations is shown. No names or personal details are displayed.</p>
+    </section>
+
+    <section class="quote">
+      <div class="ornament">♥</div>
+      <p>Life goes on with<br>our beloved ones.</p>
+      <div class="line">──────── ♥ ────────</div>
+    </section>
+
+    <footer>
+      <p>With love, Muhammed &amp; Nourhan</p>
+    </footer>
+</main>
+
+  <script src="script.js"></script>
+</body>
+</html>
